@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <h1>Check Particulate Matter In Air</h1>
+    <h1>Check Air Particulate Matter In Cities</h1>
   <input @input="hideError" @keyup.enter="getValue" v-model="enterCity" type="text" placeholder="Please enter city name">
   <div class="instruction">Optimum Particulate Matter - <span class="qualityResult">35.4µg/m&#xB3;</span></div>
    <p v-if="inCorrectCity">Please enter correct city name</p>
@@ -65,7 +65,7 @@ this.inCorrectCity = true
     width:50%;
     margin: auto;
     margin-top: 50px;
-    
+
   }
   input{
   height: 50px;
